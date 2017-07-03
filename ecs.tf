@@ -1,5 +1,5 @@
-resource "aws_ecs_cluster" "main" {
-  name = "terraform_example_ecs_cluster"
+resource "aws_ecs_cluster" "pipeline_ecs_cluster" {
+  name = "pipeline-cluster"
 }
 
 
