@@ -10,6 +10,7 @@ variable "az_count" {
 
 variable "key_name" {
   description = "Name of AWS key pair"
+  default "aws_alanryangmail"
 }
 
 variable "instance_type" {
@@ -34,4 +35,5 @@ variable "asg_desired" {
 
 variable "admin_cidr_ingress" {
   description = "CIDR to allow tcp/22 ingress to EC2 instance"
+  default="37.228.0.0/16"
 }

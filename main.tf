@@ -83,7 +83,7 @@ resource "aws_ecs_service" "pipeline_echo_service" {
   load_balancer {
     target_group_arn = "${aws_alb_target_group.pipeline_echo_tg.id}"
     container_name   = "echo"
-    container_port   = "80"
+    container_port   = "3000"
   }
 
   depends_on = [
